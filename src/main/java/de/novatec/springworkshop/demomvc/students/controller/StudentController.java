@@ -2,17 +2,16 @@ package de.novatec.springworkshop.demomvc.students.controller;
 
 import de.novatec.springworkshop.demomvc.students.dto.StudentDTO;
 import de.novatec.springworkshop.demomvc.students.service.StudentService;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController("/university")
-public class StudentResource {
+public class StudentController {
     private final StudentService studentService;
 
-    public StudentResource(StudentService studentService) {
+    public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
 
