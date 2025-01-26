@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demoMVC
+  datasource:
+    url: jdbc:h2:mem:universitydb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+    embedded-database-connection: h2
+  data:
+    jpa:
+      hibernate:
+        ddl-auto: update
