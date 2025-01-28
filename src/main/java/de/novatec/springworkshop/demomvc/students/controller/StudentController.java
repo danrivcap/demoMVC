@@ -17,14 +17,16 @@ public class StudentController {
 
     @GetMapping("/students")
     @ResponseStatus(HttpStatus.OK)
-    @ResponseBody
     public List<StudentDTO> findAll(){
         return studentService.findAll();
     }
 
+
+
+
+    
     @GetMapping("/student/{name}")
     @ResponseStatus(HttpStatus.OK)
-    @ResponseBody
     public StudentDTO findStudentByName(@PathVariable String name) {
         return studentService.find(name);
     }
