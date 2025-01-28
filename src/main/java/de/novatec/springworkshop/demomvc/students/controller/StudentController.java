@@ -21,10 +21,6 @@ public class StudentController {
         return studentService.findAll();
     }
 
-
-
-
-    
     @GetMapping("/student/{name}")
     @ResponseStatus(HttpStatus.OK)
     public StudentDTO findStudentByName(@PathVariable String name) {
